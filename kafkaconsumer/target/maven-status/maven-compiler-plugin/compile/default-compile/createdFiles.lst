@@ -1,0 +1,4 @@
+com/logger/kafkaconsumer/config/KafkaConfiguration.class
+com/logger/kafkaconsumer/repository/LogEntityRepository.class
+com/logger/kafkaconsumer/entity/LogEntity.class
+com/logger/kafkaconsumer/KafkaconsumerApplication.class
