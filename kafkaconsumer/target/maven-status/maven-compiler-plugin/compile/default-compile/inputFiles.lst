@@ -1,0 +1,4 @@
+/home/yasko/Downloads/kafkaconsumer/src/main/java/com/logger/kafkaconsumer/entity/LogEntity.java
+/home/yasko/Downloads/kafkaconsumer/src/main/java/com/logger/kafkaconsumer/config/KafkaConfiguration.java
+/home/yasko/Downloads/kafkaconsumer/src/main/java/com/logger/kafkaconsumer/KafkaconsumerApplication.java
+/home/yasko/Downloads/kafkaconsumer/src/main/java/com/logger/kafkaconsumer/repository/LogEntityRepository.java
