@@ -2,7 +2,7 @@
     <div *ngFor="let travel of travels" class="card mb-3">
         <img src="{{ travel.imageUrl }}" class="card-img-top" alt="...">
         <div class="card-body">
-            <a href="#" class="card-title"><h4>{{ travel.title }}</h4></a>
+            <a (click)="goDetail" class="card-title"><h4>{{ travel.title }}</h4></a>
             <p >{{ travel.user }}</p>
             <p class="card-text">{{ travel.notes }}</p>
             <p class="card-text"><small class="text-muted">{{ travel.travel_date }}</small></p>
