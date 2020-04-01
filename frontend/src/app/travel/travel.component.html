@@ -1,11 +1,13 @@
 <div class="container">
     <div *ngFor="let travel of travels" class="card mb-3">
-        <img src="{{ travel.imageUrl }}" class="card-img-top" alt="...">
+        <!--<img src="{{ travel.imageUrl }}" class="card-img-top" alt="...">-->
         <div class="card-body">
-            <a (click)="goDetail" class="card-title"><h4>{{ travel.title }}</h4></a>
-            <p >{{ travel.user }}</p>
+            <a (click)="goDetail(travel)" class="card-title page-link"><h4>{{ travel.title }}</h4></a>
+            <div class="container">
+            <p>{{ travel.user }}</p>
             <p class="card-text">{{ travel.notes }}</p>
             <p class="card-text"><small class="text-muted">{{ travel.travel_date }}</small></p>
+        </div>
         </div>
     </div>
 </div>

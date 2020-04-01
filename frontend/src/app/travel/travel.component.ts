@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Travel } from './travel';
+import { HttpClient } from '@angular/common/http';
+import { TravelService } from '../services/travel.service';
 
 
 @Component({
@@ -9,20 +11,22 @@ import { Travel } from './travel';
 })
 export class TravelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _travelService: TravelService) { }
 
-  travels : Travel[] = [
-    {
-      user:"yasin",
-      title:"super eskose",
-      location:"esk",
-      notes:"notesss",
-      travel_date:"today",
-      imageUrl:"https://cdn1.ntv.com.tr/gorsel/kjucBsBivk2r3b2B0TFVKg.jpg?width=1000&mode=crop&scale=both"
-    }
-  ]
+  travels : Travel[];
 
   ngOnInit(): void {
+    this._travelService.getTravelList().subscribe(data =>{
+      this.travels = data;
+    });
+    
+    /*this.http.get<Travel[]>("http://localhost:3000/api/post/list").subscribe(data =>{
+      this.travels = data;
+    });*/
+  }
+
+  goDetail(travel){
+    alert(travel.title);
   }
 
 }
