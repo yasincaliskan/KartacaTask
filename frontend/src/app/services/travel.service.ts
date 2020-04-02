@@ -10,7 +10,7 @@ export class TravelService {
   constructor(private http: HttpClient) { }
   
   getTravelList(){
-  return this.http.get<Travel[]>("http://localhost:3000/api/post/list")
+  return this.http.get<Travel[]>("http://127.0.0.1:8000/api/post/list")
 }
 
 }
