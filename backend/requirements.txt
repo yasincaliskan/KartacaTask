@@ -7,6 +7,7 @@ django-filter
 django-rest-swagger
 djangorestframework
 djangorestframework-simplejwt
+django-cors-headers
 idna
 itypes
 Jinja2
