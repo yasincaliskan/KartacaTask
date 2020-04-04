@@ -26,7 +26,8 @@ export class TravelComponent implements OnInit {
   }
 
   goDetail(travel){
-    alert(travel.title);
-  }
-
+    this._travelService.getDetail(travel.slug).subscribe(data =>{
+      this.travels = data;
+  })}
+  
 }
